@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COXYL - Ignite Your Business Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+
+    <!-- Navigation -->
+    
+    <nav class="bg-[#1e2939] py-4 fixed w-full z-20 shadow-xl">
+        <div class="container mx-auto px-4 flex items-center justify-between text-gray-100">
+            
+            <!-- Navigation Links (Left Side) -->
+            <div class="flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="hover:text-gray-400 transition duration-300">Home</a>
+                <a href="about.html" class="hover:text-gray-400 transition duration-300">About</a>
+                <a href="portfolio brands.html" class="hover:text-gray-400 transition duration-300">Portfolio Brands</a>
+                <a href="resources.html" class="hover:text-gray-400 transition duration-300">Resources</a>
+            </div>
+    
+            <!-- Brand Name (Centered) -->
+            <img src="images/logos/coxlo.png" alt="COXYL Logo" class="h-24">
+            <!-- <div class="absolute left-1/2 transform -translate-x-1/2 text-3xl font-extrabold tracking-wider">
+                COXYL
+            </div> -->
+    
+            <!-- Call-to-Action Buttons (Right Side) -->
+            <div class="flex space-x-4">
+                <a href="login.html" class="bg-transparent text-gray-100 px-6 py-2 rounded-full font-semibold border border-gray-100 hover:bg-gray-700 transition duration-300">
+                    Sign In
+                </a>
+                <a href="new.html" class="bg-gray-100 text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-700 hover:text-gray-100 transition duration-300">
+                    Get Started
+                </a>
+            </div>
+    
+        </div>
+    </nav>
+
+ <!-- Interactive Horizontal Hero and About Sections -->
+<section class="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-gray-100 overflow-hidden">
+    <!-- Background Video - Updated for full visibility -->
+<div class="absolute inset-0 z-0">
+    <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+        <!-- Ensure the file paths are correct -->
+        <source src="videos/bg mp4.mkv" type="video/mp4">
+        <!-- <source src="videos/background.webm" type="video/webm"> -->
+        Your browser does not support the video tag.
+    </video>
+    <!-- Removed overlay completely -->
+    <!-- <div class="absolute inset-0 bg-black/10"></div> -->
+</div>
+
+    <!-- Background Gradient Circles -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl -top-48 -left-48 animate-pulse"></div>
+        <div class="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse delay-1000"></div>
+    </div>
+
+    <!-- Horizontal Scrolling Container -->
+    <div id="slider-container" class="absolute inset-0 flex snap-x snap-mandatory overflow-x-auto overflow-y-hidden scroll-smooth">
+        <!-- Hero Section (Slide 1) -->
+        <div id="slide-1" class="snap-start min-w-full h-full flex flex-col items-center justify-center text-center px-6 py-12 bg-gray-900/30 backdrop-blur-sm relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 animate-fade-in-down">Launch the Future of Business</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-lg leading-relaxed animate-fade-in-up">Supercharge your startup with AI-powered insights, strategic funding, and a global network of innovators.</p>
+            <a href="#slide-2" class="relative inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold overflow-hidden group">
+                <span class="relative z-10 group-hover:scale-105 transition-transform duration-300">Discover More</span>
+                <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            </a>
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-4">
+                <a href="#slide-1" class="w-3 h-3 rounded-full bg-white"></a>
+                <a href="#slide-2" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+                <a href="#slide-3" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+            </div>
+        </div>
+    
+        <!-- About Section (Slide 2) -->
+        <div id="slide-2" class="snap-start min-w-full h-full flex flex-col items-center justify-center text-center px-6 py-12 bg-gray-800/30 backdrop-blur-sm relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-6 animate-fade-in-down">What is COXYL?</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-md leading-relaxed animate-fade-in-up">COXYL is your ultimate gateway to startup success, integrating AI-driven funding, world-class mentorship, and cutting-edge infrastructure to fuel innovation.</p>
+            <a href="#slide-3" class="relative inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold overflow-hidden group">
+                <span class="relative z-10 group-hover:scale-105 transition-transform duration-300">See Our Features</span>
+                <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            </a>
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-4">
+                <a href="#slide-1" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+                <a href="#slide-2" class="w-3 h-3 rounded-full bg-white"></a>
+                <a href="#slide-3" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+            </div>
+        </div>
+        
+        <!-- Features Section (Slide 3) -->
+        <div id="slide-3" class="snap-start min-w-full h-full flex flex-col items-center justify-center text-center px-6 py-12 bg-gray-700/30 backdrop-blur-sm relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-100 mb-6 animate-fade-in-down">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
+                <div class="bg-gray-900/50 p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-700/50 cursor-pointer">
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Funding</h3>
+                    <p class="text-gray-300">Secure AI-optimized investments tailored to your unique vision.</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-700/50 cursor-pointer">
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Acceleration</h3>
+                    <p class="text-gray-300">Expand globally with advanced tech and strategic partnerships.</p>
+                </div>
+                <div class="bg-gray-900/50 p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-700/50 cursor-pointer">
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-3">Infrastructure</h3>
+                    <p class="text-gray-300">Thrive in next-gen hubs equipped with AI-powered business tools.</p>
+                </div>
+            </div>
+            <a href="#slide-1" class="relative inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold overflow-hidden group mt-8">
+                <span class="relative z-10 group-hover:scale-105 transition-transform duration-300">Back to Start</span>
+                <span class="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            </a>
+            <!-- Navigation Dots -->
+            <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-4">
+                <a href="#slide-1" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+                <a href="#slide-2" class="w-3 h-3 rounded-full bg-gray-400 hover:bg-white transition-colors"></a>
+                <a href="#slide-3" class="w-3 h-3 rounded-full bg-white"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows - Fixed to directly navigate to slides -->
+    <div class="absolute z-20 inset-y-0 left-0 flex items-center">
+        <button id="prev-button" class="bg-gray-900/50 hover:bg-gray-900/70 text-white rounded-r-full p-3 focus:outline-none transform transition hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </div>
+    <div class="absolute z-20 inset-y-0 right-0 flex items-center">
+        <button id="next-button" class="bg-gray-900/50 hover:bg-gray-900/70 text-white rounded-l-full p-3 focus:outline-none transform transition hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = ['slide-1', 'slide-2', 'slide-3'];
+            let currentIndex = 0;
+
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const sliderContainer = document.getElementById('slider-container');
+
+            function goToSlide(index) {
+                // Loop back to the first slide if the index exceeds the last slide
+                if (index >= slides.length) {
+                    currentIndex = 0; // Go to the first slide
+                } 
+                // Loop back to the last slide if the index is less than 0
+                else if (index < 0) {
+                    currentIndex = slides.length - 1; // Go to the last slide
+                } 
+                else {
+                    currentIndex = index;
+                }
+                document.getElementById(slides[currentIndex]).scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Update current index based on scroll position
+            function updateCurrentIndex() {
+                const scrollPosition = sliderContainer.scrollLeft;
+                const slideWidth = window.innerWidth;
+                currentIndex = Math.round(scrollPosition / slideWidth);
+            }
+
+            // Event listeners for navigation buttons
+            prevButton.addEventListener('click', function () {
+                updateCurrentIndex();
+                goToSlide(currentIndex - 1);
+            });
+
+            nextButton.addEventListener('click', function () {
+                updateCurrentIndex();
+                goToSlide(currentIndex + 1);
+            });
+
+            // Add keyboard navigation
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') {
+                    updateCurrentIndex();
+                    goToSlide(currentIndex - 1);
+                } else if (e.key === 'ArrowRight') {
+                    updateCurrentIndex();
+                    goToSlide(currentIndex + 1);
+                }
+            });
+
+            // Update current index when scrolling stops
+            sliderContainer.addEventListener('scroll', function () {
+                clearTimeout(sliderContainer.scrollEndTimer);
+                sliderContainer.scrollEndTimer = setTimeout(function () {
+                    updateCurrentIndex();
+                }, 100);
+            });
+        });
+    </script>
+
+    <!-- Tailwind Animation Styles -->
+    <style>
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-down { animation: fadeInDown 0.8s ease-out; }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out 0.2s both; }
+        
+        /* Ensure smooth scrolling works on all browsers */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Hide scrollbar but allow scrolling */
+        .snap-x::-webkit-scrollbar {
+            display: none;
+        }
+        .snap-x {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</section>
+    <!-- Stats -->
+    <section class="py-20 bg-gray-800 text-center">
+        <h2 class="text-4xl font-bold text-gray-100 mb-12">Our Impact</h2>
+        <div class="grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+            <div>
+                <h3 class="text-5xl font-extrabold text-gray-100 counter" data-target="430">0</h3>
+                <p class="text-lg mt-2 text-gray-300">Startups Accelerated</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-extrabold text-gray-100 counter" data-target="20000000" +>$0M</h3>
+                <p class="text-lg mt-2 text-gray-300">Investment Raised</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-extrabold text-gray-100 counter" data-target="45">0</h3>
+                <p class="text-lg mt-2 text-gray-300">Global Partners</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Fuel Your Startup Journey -->
+    <section class="py-20 bg-gray-900 text-center">
+        <h2 class="text-4xl font-bold text-gray-100 mb-6">How We Fuel Your <span class="text-gray-100">Startup Journey</span></h2>
+        <p class="text-lg text-gray-300 mb-12">Hands-on mentorship, access to expert networks, and resources designed to drive growth and success for startups across various sectors.</p>
+        <div class="grid md:grid-cols-5 gap-8 max-w-6xl mx-auto">
+            <div class="flex flex-col items-center">
+                <img src="images/design/1cop.png" alt="Startup Accelerator" class="mb-4 w-40 h-40 object-contain">
+                <h3 class="text-xl font-semibold text-gray-100">Startup Accelerator</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/design/2.png" alt="Expert Guidance" class="mb-4 w-40 h-40 object-contain">
+                <h3 class="text-xl font-semibold text-gray-100">Expert Guidance</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/design/4cop.png" alt="Partnerships" class="mb-4 w-40 h-40 object-contain">
+                <h3 class="text-xl font-semibold text-gray-100">Partnerships</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/design/3cop.png" alt="Funding Resources" class="mb-4 w-40 h-40 object-contain">
+                <h3 class="text-xl font-semibold text-gray-100">Funding Resources</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="images/design/5cop.png" alt="Co-Working Spaces" class="mb-4 w-40 h-40 object-contain">
+                <h3 class="text-xl font-semibold text-gray-100">Co-Working Spaces</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="py-20 bg-gray-800 text-center">
+        <h2 class="text-4xl font-bold text-gray-100 mb-12">Dynamic Hubs Across India</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="flex flex-col items-center"><img src="images/city/3cop.png" alt="Gurgaon" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Gurgaon</h3></div>
+            <div class="flex flex-col items-center"><img src="images/city/2cop.png" alt="Delhi" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Delhi</h3></div>
+            <div class="flex flex-col items-center"><img src="images/city/1cop.png" alt="Lucknow" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Lucknow</h3></div>
+            <div class="flex flex-col items-center"><img src="images/city/4cop.png" alt="Chennai" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Chennai</h3></div>
+            <div class="flex flex-col items-center"><img src="images/city/5cop.png" alt="Mumbai" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Mumbai</h3></div>
+            <div class="flex flex-col items-center"><img src="images/city/6cop.png" alt="Jaipur" class="mb-4"><h3 class="text-xl font-semibold text-gray-100">Jaipur</h3></div>
+        </div>
+    </section>
+<!-- Start Your Journey Section -->
+<section class="py-20 bg-gray-900 text-center relative bg-cover bg-center" style="background-image: url('images/graph1.png');">
+    <div class="absolute inset-0 bg-gray-900/70"></div> <!-- Add a dark overlay for better text readability -->
+    <div class="relative z-10 max-w-6xl mx-auto flex flex-col items-center">
+        <h2 class="text-5xl font-bold text-gray-100 mb-6">
+            Start your <span class="text-yellow-500">journey</span> with us today!
+        </h2>
+        <button class="bg-gray-100 text-gray-900 px-6 py-4 text-[20px] rounded-full font-semibold hover:bg-gray-700 hover:text-gray-100 transition duration-300"  
+                onclick="openModal()">  
+            Accelerate your startup  
+        </button>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="applyModal" class="modal hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-80">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-[32rem]">
+        <h2 class="text-2xl font-bold mb-6 text-gray-100">Startup Application</h2>
+
+        <label for="name" class="block font-semibold text-gray-300">Name:</label>
+        <input type="text" id="name" class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-3 mb-4 rounded" required> <!-- Required field -->
+
+        <label for="email" class="block font-semibold text-gray-300">Email:</label>
+        <input type="email" id="email" class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-3 mb-4 rounded" required> <!-- Required field -->
+
+        <label for="startupName" class="block font-semibold text-gray-300">Startup Name:</label>
+        <input type="text" id="startupName" class="w-full border border-gray-600 bg-gray-700 text-gray-100 p-3 mb-6 rounded" required> <!-- Required field -->
+
+        <div class="flex justify-end">
+            <button class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition duration-300" 
+                    onclick="submitForm()">Submit Application</button>
+            <button class="ml-4 text-gray-400 hover:text-gray-200 transition duration-300" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Success Animation -->
+<div id="successAnimation" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" class="w-16 h-16 mx-auto">
+            <circle cx="26" cy="26" r="25" fill="none" stroke="#9333EA" stroke-width="2" />
+            <path fill="none" stroke="#9333EA" stroke-width="2" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+        <p class="text-blue-600 font-semibold mt-2">Submitted successfully</p>
+    </div>
+</div>
+
+
+
+<script>
+    function openModal() {
+        const modal = document.getElementById('applyModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('z-50'); // Ensure it's on top
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('applyModal');
+        modal.classList.add('hidden');
+    }
+
+    function submitForm() {
+        closeModal();
+
+        const successAnimation = document.getElementById('successAnimation');
+        successAnimation.classList.remove('hidden');
+
+        setTimeout(function() {
+            successAnimation.classList.add('hidden');
+        }, 3000);
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('applyModal');
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+</script>
+
+
+    <!-- Partners -->
+    <section class="py-20 bg-gray-800 text-center">
+        <h2 class="text-4xl font-bold text-gray-100 mb-12">Startups Supported by Us</h2>
+        <div class="overflow-hidden">
+            <div class="flex space-x-12 animate-marquee">
+                <img src="images/logos/curefit.png" alt="Company 1" class="h-20">
+                <img src="images/logos/wowmomo.png" alt="Company 2" class="h-20">
+                <img src="images/logos/simpl.png" alt="Company 3" class="h-20">
+                <img src="images/logos/meesho.png" alt="Company 4" class="h-20">
+                <img src="images/logos/zypp.png" alt="Company 5" class="h-20">
+                <img src="images/logos/plaid.png" alt="Company 6" class="h-20">
+                <img src="images/logos/bolt.png" alt="Company 7" class="h-20">
+                <img src="images/logos/fashinza.png" alt="Company 8" class="h-20">
+                <img src="images/logos/vixter.png" alt="Company 9" class="h-20">
+                <img src="images/logos/kurda.png" alt="Company 10" class="h-20">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-gray-100">
+        <div class="container mx-auto px-4 flex justify-between items-start">
+            <!-- Left Side: Navigation Links -->
+            <div class="flex flex-col space-y-2 text-[18px] font-normal">
+                <a href="index.html" class="hover:text-gray-400 transition duration-300">Home</a>
+                <a href="about.html" class="hover:text-gray-400 transition duration-300">About</a>
+                <a href="portfolio brands.html" class="hover:text-gray-400 transition duration-300">Portfolio Brands</a>
+                <a href="project/resources.html" class="hover:text-gray-400 transition duration-300">Resources</a>
+            </div>
+    
+            <!-- Right Side: Social Media Links -->
+            <div class="flex flex-col items-end">
+                <p class="mb-2 text-[20px]">Follow us on Social Media</p>
+                <div class="flex flex-col items-end space-y-2 text-[21px] font-sans">
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Centered Copyright Text -->
+        <p class="text-[18px] text-center mt-6">© 2025 COXYL. All rights reserved.</p>
+    </footer>
+    
+    
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const animateCounter = (el, target) => {
+                let count = 0;
+                const step = Math.ceil(target / 100);
+                const interval = setInterval(() => {
+                    count += step;
+                    if (count >= target) {
+                        el.textContent = target.toLocaleString() + "+"; // Add "+" after reaching the final value
+                        clearInterval(interval);
+                    } else {
+                        el.textContent = count.toLocaleString();
+                    }
+                }, 40);
+            };
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute("data-target"));
+                        animateCounter(entry.target, target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.8 });
+    
+            document.querySelectorAll(".counter").forEach(counter => observer.observe(counter));
+        });
+    </script>
+
+    
+    
+
+    <!-- Styles -->
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-marquee { animation: marquee 20s linear infinite; }
+        .animate-fade-in { animation: fadeIn 1s ease-out; }
+    </style>
+</body>
+</html>

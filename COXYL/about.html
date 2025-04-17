@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Coxyl - Business Accelerator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <header class="fixed top-0 left-0 w-full z-10 bg-gray-900 bg-opacity-70 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-yellow-400">COXYL</h1>
+            
+            <!-- Navigation -->
+            <nav class="mt-3 md:mt-0">
+                <a href="index.html" class="text-lg bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-yellow-600 transition">
+                    Home
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <style>
+        .video-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .video-overlay {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(17, 24, 39, 0.7); /* bg-gray-900 with opacity */
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-gray-100">
+    
+    <!-- Hero Section with Background Video -->
+    <section class="video-container h-screen">
+        <!-- Background Video -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="videos/bg mp4.mkv" type="video/mp4">
+            <!-- Add fallback sources if needed -->
+            <!-- <source src="videos/background.webm" type="video/webm"> -->
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Content Overlay -->
+        <div class="video-overlay h-full flex flex-col items-center justify-center py-20">
+            <h1 class="text-5xl font-bold">About <span class="text-yellow-500">Coxyl</span></h1>
+            <p class="text-lg mt-4 max-w-2xl mx-auto">Empowering startups with mentorship, funding, and cutting-edge technology to accelerate their growth.</p>
+        </div>
+    </section>
+    
+    <!-- Mission Section -->
+    <section class="py-20 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-yellow-400">Our Mission</h2>
+        <p class="text-lg mt-4">At Coxyl, we are dedicated to driving innovation and helping startups scale efficiently with strategic mentorship and capital.</p>
+    </section>
+    
+    <!-- Two-Column Section -->
+    <section class="py-16 bg-gray-900 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
+        <div>
+            <h3 class="text-3xl font-bold text-yellow-400">Why Choose Coxyl?</h3>
+            <ul class="mt-4 space-y-4 text-lg">
+                <li>✅ World-class mentors & industry leaders</li>
+                <li>✅ Access to funding & investor networks</li>
+                <li>✅ State-of-the-art workspace & resources</li>
+                <li>✅ Global market expansion opportunities</li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-3xl font-bold text-yellow-400">Our Impact</h3>
+            <p class="mt-4 text-lg">We have helped over 430+ startups achieve exponential growth, raising more than $200M in funding.</p>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="text-center py-20">
+        <h2 class="text-4xl font-bold text-yellow-400">Join Coxyl Today!</h2>
+        <p class="text-lg mt-4">Accelerate your startup with the right resources, mentors, and funding.</p>
+        <a href="login.html"><button class="mt-6 px-6 py-3 bg-yellow-500 text-gray-900 text-lg font-semibold rounded-full hover:bg-yellow-600 transition">
+            Apply Now
+        </button></a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-gray-100">
+        <div class="container mx-auto px-4 flex justify-between items-start">
+            <!-- Left Side: Navigation Links -->
+            <div class="flex flex-col space-y-2 text-[18px] font-normal">
+                <a href="index.html" class="hover:text-gray-400 transition duration-300">Home</a>
+                <a href="about.html" class="hover:text-gray-400 transition duration-300">About</a>
+                <a href="portfolio brands.html" class="hover:text-gray-400 transition duration-300">Services</a>
+                <a href="portfolio brands.html" class="hover:text-gray-400 transition duration-300">Portfolio Brands</a>
+                <a href="#" class="hover:text-gray-400 transition duration-300">Contact</a>
+            </div>
+
+            <!-- Right Side: Social Media Links -->
+            <div class="flex flex-col items-end">
+                <p class="mb-2 text-[20px]">Follow us on Social Media</p>
+                <div class="flex flex-col items-end space-y-2 text-[21px] font-sans">
+                    <a href="facebook.com" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="x.com" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="linkedin.com" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="instagram.com" class="text-gray-400 hover:text-gray-200 transition duration-300"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centered Copyright Text -->
+        <p class="text-[18px] text-center mt-6">© 2025 COXYL. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
